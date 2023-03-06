@@ -10,5 +10,8 @@ for train_subset in libritts:
         for book in books:
             files = sorted(glob.glob(f'{book}/*'))
             for f in files:
-                print(f)
+                if 'wav' in f:
+                    os.system(f'ln -s {f} ./')
+                if 'norm' in f:
+                    os.system(f'ln -s {f} ./')
                 exit()
