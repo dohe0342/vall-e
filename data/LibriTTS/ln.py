@@ -3,8 +3,8 @@ import os
 
 libritts = sorted(glob.glob('/home/work/workspace/LibriSpeech/tts/LibriTTS/train-*'))
 
-for train-subset in libritts:
-    subset = sorted(glob.glob(f'{train-subset}/*'))
+for train_subset in libritts:
+    subset = sorted(glob.glob(f'{train_subset}/*'))
     for spk in subset:
         books = sorted(glob.glob(f'{spk}/*'))
         for book in books:
