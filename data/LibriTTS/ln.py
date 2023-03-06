@@ -14,4 +14,4 @@ for train_subset in libritts:
                     os.system(f'ln -s {f} ./')
                 if 'norm' in f:
                     os.system(f'ln -s {f} ./')
-                exit()
+            exit()
