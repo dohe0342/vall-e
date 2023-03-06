@@ -5,6 +5,7 @@ from tqdm import tqdm
 libritts = sorted(glob.glob('/home/work/workspace/LibriSpeech/tts/LibriTTS/train-*'))
 
 for train_subset in tqdm(libritts):
+    print(train_subset)
     subset = sorted(glob.glob(f'{train_subset}/*'))
     for spk in tqdm(subset, leave=False):
         books = sorted(glob.glob(f'{spk}/*'))
