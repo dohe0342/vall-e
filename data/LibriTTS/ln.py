@@ -2,7 +2,7 @@ import glob
 import os
 from tqdm import tqdm
 
-libritts = sorted(glob.glob('/home/work/workspace/LibriSpeech/tts/LibriTTS/train-clean-360'))
+libritts = sorted(glob.glob('/home/work/workspace/LibriSpeech/tts/LibriTTS/train-other-500'))
 
 for train_subset in tqdm(libritts):
     print(train_subset)
